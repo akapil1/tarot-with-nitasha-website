@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nitasha Cosmic Creatrix</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Quicksand:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+</head>
+<body>
+  <canvas id="starfield"></canvas>
+
+  <header class="navbar">
+    <div class="logo-container">
+      <img src="pics/tbnlogo.jpeg" alt="Nitasha Logo" class="site-logo">
+      <span class="logo-text"> Unlock secrets in the Cards. </span>
+    </div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#videos">Learn Tarot</a>
+      <a href="#testimonials">Testimonials</a>
+      <a href="#book">Book Session</a>
+    </nav>
+  </header>
+
+ <!-- 🌙 Home Section -->
+<section id="home" class="hero">
+  <div class="hero-overlay">
+    <div class="hero-left">
+      <img src="pics/tbnlogo.jpeg" alt="Nitasha Logo" class="hero-logo">
+      <div class="hero-content">
+        <h1>Nitasha’s Tarot Lounge</h1>
+        <p>Tarot Reader • Spiritual Guide • Gentle Transformation</p>
+        <a href="#book" class="btn">Book a Reading</a>
+      </div>
+    </div>
+
+    <div class="hero-right">
+      <img src="pics/tarot.jpeg" alt="Nitasha Tarot Reading" class="hero-photo">
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+  <!-- 🌸 About Section -->
+  <section id="about" class="about">
+    <h2>Hello! My cosmic family ✨</h2>
+    <p><em>“Guiding You to Clarity, Purpose, and Destiny – One Card at a Time.”</em></p>
+    <p>
+      Step into <strong>Mystic Whispers</strong> — where the ancient art of Tarot meets modern insight.
+      Guided by Nitasha’s intuitive connection to the spiritual realm, each reading becomes a journey
+      of clarity, purpose, and gentle awakening.
+    </p>
+    <p>
+      Whether you seek answers in love, career, or personal transformation, Nitasha offers
+      readings that illuminate your path with compassion and wisdom. Her approach blends
+      the sacred language of Tarot with intuitive energy work — helping you reconnect with
+      your inner truth and the whispers of the cosmos.
+    </p>
+    <p>
+      Breathe in, release, and let the cards speak. The universe always has a message for you —
+      and here, in this sacred space, Nitasha helps you listen.
+    </p>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- 🌙 Learn Tarot Section -->
+  <section id="videos" class="videos">
+    <h2>Learn Tarot with Nitasha ✨</h2>
+    <p class="section-subtitle">
+      Explore the sacred art of Tarot through Nitasha’s teachings — a blend of intuition, healing, and cosmic wisdom.
+    </p>
+    <div class="video-grid">
+      <div class="video-card">
+        <video controls>
+          <source src="videos/video1.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="video-card">
+        <video controls>
+          <source src="videos/video2.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="video-card">
+        <video controls>
+          <source src="videos/video3.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+<!-- 🌟 Testimonials Section -->
+<section id="testimonials" class="testimonials">
+  <h2>What They Say ✨</h2>
+  <p class="section-subtitle">
+    Voices from across the globe — heartfelt experiences shared by those who’ve connected with Nitasha.
+  </p>
+    <!-- 🌍 World Map Image -->
+  <div class="testimonial-map">
+    <img src="pics/map.jpeg" alt="World Map with Clients" />
+  </div>
+
+  <div class="testimonial-carousel">
+    <div class="testimonial-track">
+      <!-- India -->
+      <div class="testimonial-card">
+        <p>Session with Nitasha was more than perfect and grateful for her guidance. The session was useful and she is worth all the appreciation.</p>
+        <span>- Aditi, New Delhi</span>
+      </div>
+      <div class="testimonial-card">
+        <p>Her understanding of cards is excellent, her motivation and guidance helped me a lot.</p>
+        <span>- Teena, Kolkata</span>
+      </div>
+      <div class="testimonial-card">
+        <p>All my anxieties were put to rest, and I was deeply satisfied.</p>
+        <span>- Harleen, New Delhi</span>
+      </div>
+      <div class="testimonial-card">
+        <p>I was emotionally uplifted after the session.</p>
+        <span>- Shivangi, New Delhi</span>
+      </div>
+      <div class="testimonial-card">
+        <p>Her readings are simple, and they helped me gain insight into my life. She gave me a whole new perspective to analyse my situation better. Thank you, my friend.</p>
+        <span>- Dipika, New Delhi</span>
+      </div>
+      <div class="testimonial-card">
+        <p>Completely satisfied and rejuvenated.</p>
+        <span>- Bhawana, Jaipur</span>
+      </div>
+
+      <!-- USA & Canada -->
+      <div class="testimonial-card">
+        <p>Her readings feel like conversations with destiny.</p>
+        <span>- Advikaa, New York, USA</span>
+      </div>
+      <div class="testimonial-card">
+        <p>I left with a clear heart and renewed vision.</p>
+        <span>- Tanav, Los Angeles, USA</span>
+      </div>
+      <div class="testimonial-card">
+        <p>An experience so calming, it stayed with me for days.</p>
+        <span>- Maya, Toronto, Canada</span>
+      </div>
+      <div class="testimonial-card">
+        <p>Her warmth and insight felt beyond human.</p>
+        <span>- Tanya, Vancouver, Canada</span>
+      </div>
+      <div class="testimonial-card">
+        <p>A reading that reignited hope within me.</p>
+        <span>- Kirti, Chicago, USA</span>
+      </div>
+
+      <!-- UK -->
+      <div class="testimonial-card">
+        <p>Her wisdom felt like a divine whisper.</p>
+        <span>- Ananya, London, UK</span>
+      </div>
+      <div class="testimonial-card">
+        <p>Incredibly intuitive and uplifting.</p>
+        <span>- Bobby, Manchester, UK</span>
+      </div>
+      <div class="testimonial-card">
+        <p>I felt guided and grounded.</p>
+        <span>- Rekha, Birmingham, UK</span>
+      </div>
+      <div class="testimonial-card">
+        <p>Every word resonated with purpose.</p>
+        <span>- Amit, Edinburgh, UK</span>
+      </div>
+
+      <!-- Australia -->
+      <div class="testimonial-card">
+        <p>Completely satisfied and rejuvenated. Nitasha’s guidance brought so much peace into my thoughts.</p>
+        <span>- Riya, Sydney</span>
+      </div>
+      <div class="testimonial-card">
+        <p>Her reading felt like a mirror to my soul — gentle, truthful, and empowering. I walked away feeling lighter.</p>
+        <span>- Ishaani, Melbourne</span>
+      </div>
+      <div class="testimonial-card">
+        <p>The clarity she brought to my career and emotional struggles was beyond words. Truly gifted.</p>
+        <span>- Rohan, Perth</span>
+      </div>
+      <div class="testimonial-card">
+        <p>Every card she drew connected perfectly to what I was feeling. It was both comforting and revealing.</p>
+        <span>- Priya, Brisbane</span>
+      </div>
+      <div class="testimonial-card">
+        <p>Her words resonated deeply. I could feel the divine energy through her calm presence and accurate insights.</p>
+        <span>- Aarav, Adelaide</span>
+      </div>
+    </div>
+
+    <!-- Navigation arrows -->
+    <div class="testimonial-nav">
+      <button class="prev">‹</button>
+      <button class="next">›</button>
+    </div>
+  </div>
+</section>
+ 
+<!-- 🎵 Floating Music Control -->
+<div class="music-player">
+  <audio id="bg-music" loop>
+    <source src="audio/background.mp3" type="audio/mpeg">
+  </audio>
+  <button id="music-toggle">
+    <img id="music-icon" src="pics/play.png" alt="Play Music">
+  </button>
+</div>
+
+  <div class="section-divider"></div>
+
+  <!-- 💫 Book Section -->
+  <section class="book" id="book">
+  <div class="book-overlay">
+    <div class="booking-content">
+      <!-- LEFT SIDE -->
+      <div class="left-side">
+        <img src="pics/twn.jpeg" alt="Nitasha Tarot Reader" class="nitasha-photo">
+        <h2>Nitasha</h2>
+        <p>Tarot Reader • Spiritual Guide • Gentle Transformation</p>
+      </div>
+
+      <div class="divider"></div>
+
+      <!-- RIGHT SIDE -->
+      <div class="right-side">
+        <h3>Book a Reading</h3>
+        <p>
+          To book an appointment, please leave a message on <strong>WhatsApp</strong>.<br>
+          Prices will be communicated once contact is made.
+        </p>
+        <p>
+          Please mention your <strong>timezone/country</strong> for the most accurate reading and scheduling.
+        </p>
+        <p>
+          <strong>Reading Hours:</strong> 10 AM – 2 PM (IST, Mon–Sun)<br>
+          <em>Timings may vary depending on availability.</em>
+        </p>
+      </div>
+    </div>
+
+    <div class="contact-icons">
+      <a href="https://wa.me/919717492525" target="_blank"><img src="pics/whatsapp.jpeg" alt="WhatsApp"></a>
+      <a href="https://www.instagram.com/tarot_with_nitasha" target="_blank"><img src="pics/insta.jpeg" alt="Instagram"></a>
+      <a href="mailto:tarotbynitasha777@gmail.com"><img src="pics/mail.jpeg" alt="Email"></a>
+    </div>
+  </div>
+</section>
+
+  <footer>
+    <p>© 2025 With Love, <span>Nitasha ♡</span> | All Rights Reserved</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
